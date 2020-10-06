@@ -1,0 +1,27 @@
+table{
+  background-color: rgb(172, 141, 141);
+  border-radius: 5px;
+  width: 100%;
+  left: 0;
+  top: 15px;
+}
+
+th{
+    border: 55px;
+    background-color: antiquewhite;
+    border-radius: 2cm;
+    
+}
+
+td{
+    background-color: azure;
+    border-color: black;
+    border-radius: 0.5cm;
+    
+    text-align: center;
+}
+td:hover{
+    background-color: red;
+}
+
+

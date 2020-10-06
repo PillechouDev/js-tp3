@@ -1,26 +1,31 @@
 
 
 
-
+a=2;
 async function load(){
     try{
-         await fetch('https://jsonplaceholder.typicode.com/todos')
-    .then(response => response.json()).then(console.log);
+        
+        const response = await fetch('https://jsonplaceholder.typicode.com/todos')
+        const task = await response.json();
+        
+        task.forEach(element =>
+           newLign(element.id,element.title,element.completed)
+        );
     }
     catch(e) {
         console.error(e);
     }
-    response.forEach(element => {
-        
-    });
+    
 }
 
-function newLign(){
+function newLign(id,title,completed){
+    console.log(id,title,completed)
     const body=document.getElementById('table-body');
     const lign=document.createElement('tr');
-    const element=document.createElement('td');
-
+    
     body.appendChild(lign);
-    lign.appendChild(element);
-
+    lign.innerHTML+=`<td>${id}</td>`;
+    lign.innerHTML+=`<td>${title}</td>`;
+    lign.innerHTML+=`<td>${completed}</td>`;
+    
 }
