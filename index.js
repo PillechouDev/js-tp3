@@ -26,6 +26,11 @@ function newLign(id,title,completed){
     body.appendChild(lign);
     lign.innerHTML+=`<td>${id}</td>`;
     lign.innerHTML+=`<td>${title}</td>`;
-    lign.innerHTML+=`<td>${completed}</td>`;
+    
+        
+    lign.innerHTML+=`<td id="${completed}">${completed}</td>`;
+
+    
+    
     
 }

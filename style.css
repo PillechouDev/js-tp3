@@ -17,11 +17,16 @@ td{
     background-color: azure;
     border-color: black;
     border-radius: 0.5cm;
-    
     text-align: center;
 }
+
 td:hover{
     background-color: red;
 }
-
+#true{
+    background-color: green;
+}
+#false{
+    background-color :red;
+}
 
